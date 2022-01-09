@@ -44,7 +44,7 @@ def create_barchart(value, index):
 
 
 st.title("Proj_Lab_zivju_atpazīšana_🐠")
-st.write("Parasta tīmekļa lietotne makšķerniekiem; zivju atpazīšanai no attēla")
+st.write("Parasta tīmekļa lietotne makšķerniekiem; zivju atpazīšanai no attēla.")
 #st.markdown(
 #    "👉 [take a look at the Fishes](https://grizzly-cress-b32.notion.site/Fishes-b1e1c38339bc49249cf70fbcb2836944)"
 #)
@@ -52,7 +52,7 @@ image_file = st.file_uploader("", type=["png", "jpg", "jpeg"])
 
 # Did the user upload an image?
 if not image_file:
-    st.warning("Ievietotais attēls:")
+    st.warning("Ievietot attēlu!")
     st.stop()
 else:
     image = load_image(image_file)
